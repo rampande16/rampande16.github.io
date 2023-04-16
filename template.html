@@ -1,0 +1,107 @@
+<center>
+    <!-- <img src="demo.jpg" alt=""> -->
+    <br/>&nbsp;
+    {{#people}}
+        <table id="{{id}}" border="0" cellpadding="0" cellspacing="0" bgcolor="#16143C" width="600" height="169" style="background: url(https://rampande16.github.io/img/background.png);">
+        <tr>
+            <td align="center" valign="top" height="169" style=" height: 169px; width: 12px;">
+            </td>
+            <td align="center" valign="center" height="169" style="width: 131px;">
+            <img src="https://rampande16.github.io/{{pic}}" style="border: 0; display: block;" width="131" height="131" title="" alt="photo"/>
+            </td>
+            <td align="center" valign="top" height="169" width="457" >
+            <table border="0" cellpadding="0" cellspacing="0" width="457" height="169">
+                <tr>
+                <td align="right" valign="center" style="border-bottom: #F1824B 1px solid; height: 80px; width: 457px;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="457" height="80">
+                    <tr>
+                        <td align="right" valign="center" style="border-bottom: #F1824B 1px solid; height: 80px; width: 278px; padding-right: 5px;">
+                        <span style="font-size: 19px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color: #ffffff;">{{name}}</span>
+                        <br/>
+                        <span style="font-size: 17px; line-height: 0.9; font-family: Arial, Helvetica, sans-serif; color: #ffffff;">{{designation}}</span>
+                        </td>
+                        <td align="left" valign="center" style="border-bottom: #F1824B 1px solid; height: 60px; width: 140px; padding: 10px;">
+                        <img src="https://rampande16.github.io/img/logo.png" style="border: 0; display: block;" width="112" height="60" title="" alt=""/>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+
+                <tr>
+                <td align="right" valign="center">
+                    <table border="0" cellpadding="0" cellspacing="0" width="457">
+                    <tr>
+                        <td align="right" valign="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="457" height="87">
+                            <tr>
+                            <td align="right" valign="center" style="height: 24px;">
+                                <span style="font-size: 13px; font-weight: 500; font-family: Arial, Helvetica, sans-serif; color: #ffffff;">
+                                <a  href="mailto:{{email}}" target="_blank" style="text-decoration: none;color: #ffffff; letter-spacing: 1px">{{email}}</a>
+                                &nbsp;&nbsp;
+                                </span>
+                                <span style="font-size: 13px; font-weight: 500; font-family: Arial, Helvetica, sans-serif; color: #ffffff;">
+                                {{phone}}
+                                </span>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td align="right" valign="top">
+                                <span style="font-size: 13px; font-weight: 500; font-family: Arial, Helvetica, sans-serif; color: #ffffff;">Tribal Monk Network LLP</span>
+                                <br/>
+                                <span style="font-size: 13px; font-weight: 500; line-height: 1.5; font-family: Arial, Helvetica, sans-serif; color: #ffffff;">14, Janki Centre, Veera Desai Road, Andheri (W), Mumbai - 400 053</span>
+                                <br/>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td align="right" valign="bottom">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="right" valign="center" style="width: 30px;">
+                                    <span>
+                                        <a href="https://www.instagram.com/tribalmonknetwork/" target="_blank" style="border: 0;display: inline-block">
+                                        <img width="24" height="24" src="https://rampande16.github.io/img/insta.png" style="border-radius: 12px;display: block;border: none;width: 22px;max-width: 22px !important; height: 22px; max-height: 22px !important">
+                                        </a>
+                                    </span>
+                                    </td>
+                                    <td align="right" valign="center" style="width: 30px;">
+                                    <span>
+                                        <a href="https://www.facebook.com/tribalmonknetwork/" target="_blank" style="border: 0;display: inline-block">
+                                        <img width="22" height="22" src="https://rampande16.github.io/img/in.png" style="border-radius: 12px;display: block;border: none;width: 22x;max-width: 22px !important; height: 22px; max-height: 22px !important">
+                                        </a>
+                                    </span>
+                                    </td>
+                                    <td align="right" valign="center" style="width: 30px;">
+                                    <span>
+                                        <a href="https://www.linkedin.com/company/tribalmonk/?originalSubdomain=in" target="_blank" style="border: 0;display: inline-block">
+                                        <img width="22" height="22" src="https://rampande16.github.io/img/fb.png" style="border-radius: 12px;display: block;border: none;width: 22px;max-width: 22px !important; height: 22px; max-height: 22px !important">
+                                        </a>
+                                    </span>
+                                    </td>
+                                </tr>
+                                </table>
+
+                            </td>
+                            <td style="width: 30px;">
+                            </td>
+                            </tr>
+                        </table>
+                        </td>
+                        <td style="width: 25px;">
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        </table>
+        <br/>
+        <button onclick="copyToClipboard('{{id}}')">Copy to Clipboard</button>
+        <div id="{{id}}-success" class="copy-success" style="display:none;"><strong>Success</strong></div>
+        <br/>
+        <br/>
+        <br/>
+    {{/people}}
+</center>

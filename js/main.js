@@ -17,5 +17,9 @@ function copyToClipboard(elementID) {
     document.removeEventListener("copy", listener);
 
     temp.remove();
-    document.getElementById('success').style.display = "block";
+    var cs = document.getElementsByClassName('copy-success')
+    for(let i = 0; i < cs.length; i++){
+      cs.item(i).style.display = "none";
+    }
+    document.getElementById(elementID+'-success').style.display = "block";
   }
